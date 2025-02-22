@@ -27,9 +27,9 @@ Random.seed!(6)
 # m = Int(m)
 # n = Int(n)
 # 生成随机问题
-problem,agents = generate_log_problem(m, n)
+problem,agents = generate_log_problem_with_agent(m, n)
 d_problem = fisher_cpu_to_gpu(problem)
-# println("problem_generate_success")
+println("problem_generate_success")
 # # 使用Ipopt解问题
 #  Ipopt_time = @elapsed begin
 #  model = Model(Ipopt.Optimizer)
